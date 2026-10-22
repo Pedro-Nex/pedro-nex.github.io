@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedro Neves | Desenvolvedor back-end</title>
+<meta name="description" content="Portfólio de Pedro Neves, desenvolvedor back-end em formação com Java e Spring Boot.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <div class="hero-text">
+    <h1>Pedro Neves</h1>
+    <p class="role">Desenvolvedor back-end em formação</p>
+    <p>Venho da área financeira e administrativa e agora estou aprendendo a construir APIs e sistemas com Java e Spring Boot.</p>
+    <p class="links">
+      <a class="btn" href="https://www.linkedin.com/in/pedro-neves-sou">Falar pelo LinkedIn</a>
+      <a href="https://github.com/Pedro-Nex">GitHub</a>
+      <a href="https://www.linkedin.com/in/pedro-neves-sou">LinkedIn</a>
+    </p>
+  </div>
+
+  <pre class="resp" aria-label="Resumo em formato de resposta de API"><code><span class="l"><b>GET</b> /desenvolvedores/pedro-neves</span>
+<span class="l ok">200 OK</span>
+<span class="l">{</span>
+<span class="l">  "nome": "Pedro Neves",</span>
+<span class="l">  "cargo": "Desenvolvedor back-end",</span>
+<span class="l">  "formacao": "Engenharia da Computação",</span>
+<span class="l">  "stack": ["Java", "Spring Boot", "SQL"],</span>
+<span class="l">  "busca": "oportunidade em TI"</span>
+<span class="l">}</span></code></pre>
+</header>
+
+<section id="sobre">
+  <h2>Sobre mim</h2>
+  <p>Passei mais de dois anos em rotinas financeiras e administrativas em escritórios de contabilidade. Lidar com dados e processos todos os dias me levou para a programação.</p>
+  <p>Hoje estudo Engenharia da Computação na Faculdade ENIAC em Guarulhos e Java no SENAI. Ainda estou aprendendo e prefiro dizer isso a enfeitar o que sei.</p>
+</section>
+
+<section id="stack">
+  <h2>Tecnologias</h2>
+  <dl class="stack">
+    <div><dt>Linguagens</dt><dd>Java, Python, C#</dd></div>
+    <div><dt>Frameworks</dt><dd>Spring Boot, Angular</dd></div>
+    <div><dt>Bancos de dados</dt><dd>SQL, Oracle</dd></div>
+  </dl>
+</section>
+
+<section id="projetos">
+  <h2>Projetos</h2>
+  <div id="lista-projetos"></div>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <p>Estou procurando minha oportunidade na área de tecnologia. Se você tem uma vaga ou quer trocar uma ideia, me escreva.</p>
+  <p class="links">
+    <a class="btn" href="https://www.linkedin.com/in/pedro-neves-sou">Falar pelo LinkedIn</a>
+    <a href="https://github.com/Pedro-Nex">GitHub</a>
+  </p>
+</section>
+
+</main>
+
+<script src="projects.js"></script>
+<script>
+  var alvo = document.getElementById("lista-projetos");
+  if (!projects.length) {
+    alvo.textContent = "Projetos novos aparecem aqui em breve.";
+  }
+  projects.forEach(function (p) {
+    var item = document.createElement("article");
+    item.className = "projeto";
+
+    var topo = document.createElement("div");
+    topo.className = "projeto-topo";
+    var h3 = document.createElement("h3");
+    h3.textContent = p.nome;
+    topo.appendChild(h3);
+    if (p.status) {
+      var st = document.createElement("span");
+      st.className = "status";
+      st.textContent = p.status;
+      topo.appendChild(st);
+    }
+    item.appendChild(topo);
+
+    var desc = document.createElement("p");
+    desc.textContent = p.descricao;
+    item.appendChild(desc);
+
+    var tags = document.createElement("ul");
+    tags.className = "tags";
+    p.tecnologias.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      tags.appendChild(li);
+    });
+    item.appendChild(tags);
+
+    var links = document.createElement("p");
+    links.className = "links";
+    (p.links || []).forEach(function (l) {
+      var a = document.createElement("a");
+      a.href = l.url;
+      a.textContent = l.texto;
+      links.appendChild(a);
+    });
+    item.appendChild(links);
+
+    alvo.appendChild(item);
+  });
+</script>
+</body>
+</html>
