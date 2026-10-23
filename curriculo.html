@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedro de Sousa Neves | Currículo</title>
+
+<!--
+  COMO USAR ESTE ARQUIVO
+  1. Edite os textos aqui no HTML. Cada bloco tem um comentário dizendo o que é
+  2. Abra o arquivo no Chrome e aperte Ctrl+P
+  3. Em Destino escolha "Salvar como PDF". Em Margens escolha "Nenhuma" e desmarque "Cabeçalhos e rodapés"
+  4. Salve como curriculo-pedro-neves.pdf na pasta do site (mesmo nome para o link do site continuar valendo)
+-->
+
+<style>
+  @page { size: A4; margin: 0; }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: #e9e9e9;
+    color: #111;
+    font-family: Arial, "Liberation Sans", Helvetica, sans-serif;
+    font-size: 10pt;
+    line-height: 1.37;
+  }
+
+  .pagina {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 11mm 15mm;
+    background: #fff;
+  }
+
+  h1 { margin: 0; font-size: 21pt; letter-spacing: 0.01em; }
+  .contato { margin: 3px 0 0; font-size: 9.5pt; color: #333; }
+  .contato a { color: #111; text-decoration: none; }
+
+  h2 {
+    margin: 11px 0 4px;
+    padding-bottom: 2px;
+    border-bottom: 1.2px solid #111;
+    font-size: 10.5pt;
+    letter-spacing: 0.04em;
+  }
+
+  p { margin: 0 0 4px; }
+  ul { margin: 3px 0 0; padding-left: 16px; }
+  li { margin-bottom: 1.5px; }
+
+  .linha {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 6px;
+  }
+  .linha:first-of-type { margin-top: 0; }
+  .linha b { font-weight: 700; }
+  .linha .data { white-space: nowrap; color: #333; }
+  .sub { color: #333; }
+
+  .skills p { margin-bottom: 2px; }
+
+  a { color: #111; }
+
+  @media print {
+    body { background: #fff; }
+    .pagina { margin: 0; padding: 11mm 15mm; min-height: auto; }
+  }
+
+  @media screen and (max-width: 700px) {
+    .pagina { width: 100%; min-height: 0; padding: 20px; }
+    .linha { flex-direction: column; gap: 0; }
+  }
+</style>
+</head>
+
+<body>
+<div class="pagina">
+
+  <!-- CABEÇALHO: nome e contatos -->
+  <h1>PEDRO DE SOUSA NEVES</h1>
+  <p class="contato">
+    Guarulhos/SP |
+    <a href="mailto:o.pedro.s.neves@gmail.com">o.pedro.s.neves@gmail.com</a> |
+    <a href="https://www.linkedin.com/in/pedro-neves-sou">linkedin.com/in/pedro-neves-sou</a> |
+    <a href="https://github.com/Pedro-Nex">github.com/Pedro-Nex</a>
+    <!-- Para versões enviadas direto a uma empresa você pode incluir o telefone aqui. Deixei de fora porque este arquivo fica público no site -->
+  </p>
+
+  <!-- OBJETIVO -->
+  <h2>OBJETIVO</h2>
+  <p>Busco estágio em desenvolvimento de software com foco em back-end com Java e Spring Boot. Quero contribuir na criação e manutenção de APIs e sistemas e aprender na prática com uma equipe experiente.</p>
+
+  <!-- RESUMO -->
+  <h2>RESUMO</h2>
+  <p>Estudante de Engenharia da Computação no 6º semestre e em formação back-end Java na Alura. Tenho mais de dois anos de experiência corporativa com grande volume de dados financeiros, relatórios e sistemas ERP, o que me deu o hábito de cuidar de precisão, prazos e regras de negócio. Estou aprendendo Java, Spring Boot e SQL na prática e já construí um projeto de back-end com essas tecnologias. Gosto de entender o problema antes de resolver.</p>
+
+  <!-- HABILIDADES: cada linha é um grupo -->
+  <h2>HABILIDADES TÉCNICAS</h2>
+  <div class="skills">
+    <p><b>Back-end:</b> Java e Spring Boot (em desenvolvimento), Maven</p>
+    <p><b>Bancos de dados:</b> SQL, MySQL, Oracle, H2</p>
+    <p><b>Outras linguagens:</b> Python, JavaScript, C#, HTML</p>
+    <p><b>Ferramentas:</b> Git e GitHub, IntelliJ IDEA, VS Code</p>
+    <p><b>Dados e sistemas:</b> Excel avançado, relatórios gerenciais, Omie, Domínio Sistemas, Oracle ERP, Sieg, EcoNet</p>
+  </div>
+
+  <!-- PROJETOS: para adicionar outro copie do primeiro .linha até o fim da lista -->
+  <h2>PROJETOS</h2>
+  <div class="linha">
+    <span><b>Chatbot de WhatsApp em Java com Spring Boot</b> <span class="sub">| Projeto acadêmico</span></span>
+  </div>
+  <ul>
+    <li>Desenvolvi o back-end com Java 17 e Spring Boot 3</li>
+    <li>Modelei o banco de dados com três tabelas para estado do usuário, doações e atendimento humano</li>
+    <li>Comecei com MySQL e migrei para H2 para o projeto rodar sem instalação externa</li>
+  </ul>
+  <p class="sub" style="margin-top:3px">Tecnologias: Java 17, Spring Boot 3, MySQL, H2</p>
+
+  <!-- FORMAÇÃO E CURSOS -->
+  <h2>FORMAÇÃO ACADÊMICA</h2>
+  <div class="linha">
+    <span><b>Engenharia da Computação</b> | Faculdade ENIAC | Guarulhos/SP</span>
+    <span class="data">2024 – em andamento (6º semestre)</span>
+  </div>
+
+  <h2>CURSOS E CERTIFICAÇÕES</h2>
+  <div class="linha">
+    <span><b>Formação Back-End Java</b> | Alura | 456 horas</span>
+    <span class="data">Mai 2026 – em andamento</span>
+  </div>
+  <div class="linha">
+    <span><b>Programação Oracle: Java Foundations</b> | SENAI Dr. Celso Charuri | 80 horas</span>
+    <span class="data">Mai – Ago 2026</span>
+  </div>
+  <div class="linha">
+    <span><b>Programação Oracle: Java Fundamentals</b> | SENAI Dr. Celso Charuri | 80 horas</span>
+    <span class="data">Fev – Mai 2026</span>
+  </div>
+  <div class="linha">
+    <span><b>Capacitação em Inteligência Artificial (CPTIA)</b> | Centro Universitário ENIAC | 30 horas</span>
+    <span class="data">2025</span>
+  </div>
+
+  <!-- EXPERIÊNCIA -->
+  <h2>EXPERIÊNCIA PROFISSIONAL</h2>
+  <div class="linha">
+    <span><b>Auxiliar Financeiro</b> | SRH Consultoria e Contabilidade LTDA | Guarulhos/SP</span>
+    <span class="data">Out 2023 – Mar 2026</span>
+  </div>
+  <ul>
+    <li>Processei e conferi grande volume de dados financeiros em sistemas ERP (Omie, Domínio e Oracle)</li>
+    <li>Automatizei rotinas administrativas e financeiras com ferramentas do próprio sistema</li>
+    <li>Montei relatórios gerenciais com Excel avançado para apoiar decisões</li>
+    <li>Emiti e conferi notas fiscais eletrônicas com atenção a precisão e conformidade</li>
+    <li>Atendi clientes e a equipe interna com comunicação clara</li>
+  </ul>
+
+  <!-- IDIOMAS E COMPETÊNCIAS -->
+  <h2>IDIOMAS</h2>
+  <p>Português: nativo | Inglês: básico a intermediário e em desenvolvimento</p>
+
+  <h2>COMPETÊNCIAS</h2>
+  <p>Proatividade, vontade de aprender, comunicação clara, trabalho em equipe, organização, atenção a detalhes e escuta ativa</p>
+
+</div>
+</body>
+</html>
