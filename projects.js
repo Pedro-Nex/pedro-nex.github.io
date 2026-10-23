@@ -3,7 +3,7 @@
 // Campos: nome, descricao, tecnologias, status (opcional), links
 
 var projects = [
-  {
+  /** {
     nome: "Bot de WhatsApp",
     descricao: "Bot pessoal para WhatsApp feito com Java e Spring Boot. Nasceu como projeto de estudo para praticar back-end na prática.",
     tecnologias: ["Java", "Spring Boot"],
@@ -11,5 +11,5 @@ var projects = [
     links: [
       { texto: "Ver código", url: "https://github.com/Pedro-Nex" }
     ]
-  }
+  } */
 ];
