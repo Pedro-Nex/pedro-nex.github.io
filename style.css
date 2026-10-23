@@ -164,6 +164,16 @@ h2 {
 
 .projeto .links { margin-top: 0.75rem; }
 
+/* Rodapé */
+footer {
+  margin-top: 5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+footer p { margin: 0; }
+
 /* Mobile */
 @media (max-width: 760px) {
   main { padding-top: 2.5rem; }
