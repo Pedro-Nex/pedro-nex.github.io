@@ -164,6 +164,19 @@ h2 {
 
 .projeto .links { margin-top: 0.75rem; }
 
+.projeto-exemplo { margin: 1rem 0; }
+.projeto-exemplo h4 { margin: 0 0 0.5rem; font-size: 1rem; }
+.projeto-exemplo pre {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font: 0.9rem/1.6 ui-monospace, "SF Mono", Consolas, "Liberation Mono", monospace;
+  color: var(--text);
+}
+
 /* Rodapé */
 footer {
   margin-top: 5rem;

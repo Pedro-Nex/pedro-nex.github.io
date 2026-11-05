@@ -22,7 +22,8 @@
     <p class="role">Desenvolvedor back-end em formação</p>
     <p>Venho da área financeira e administrativa e agora estou aprendendo a construir APIs e sistemas com Java e Spring Boot.</p>
     <p class="links">
-      <a class="btn" href="mailto:o.pedro.s.neves@gmail.com">Enviar e-mail</a>
+      <a class="btn" href="#projetos">Ver projetos</a>
+      <a href="mailto:o.pedro.s.neves@gmail.com">Enviar e-mail</a>
       <a href="https://github.com/Pedro-Nex">GitHub</a>
       <a href="https://www.linkedin.com/in/pedro-neves-sou">LinkedIn</a>
       <a href="curriculo.html">Currículo</a>
@@ -52,9 +53,8 @@
 <section id="stack">
   <h2>Tecnologias</h2>
   <dl class="stack">
-    <div><dt>Linguagens</dt><dd>Java, Python, C#</dd></div>
-    <div><dt>Frameworks</dt><dd>Spring Boot, Angular</dd></div>
-    <div><dt>Bancos de dados</dt><dd>SQL, Oracle</dd></div>
+    <div><dt>Em estudo</dt><dd>Java, Spring Boot e SQL</dd></div>
+    <div><dt>Aplicadas no TabelaFipe</dt><dd>Java 21, Spring Boot, Maven, Git e consumo de API HTTP</dd></div>
   </dl>
 </section>
 
@@ -65,7 +65,7 @@
 
 <section id="contato">
   <h2>Contato</h2>
-  <p>Aberto a novos desafios, projetos e conexões, entre em contacto através do e-mail ou redes abaixo. 🤝</p>
+  <p>Aberto a novos desafios, projetos e conexões, entre em contato pelo e-mail ou pelas redes abaixo. 🤝</p>
   <p class="links">
     <a class="btn" href="mailto:o.pedro.s.neves@gmail.com">o.pedro.s.neves@gmail.com</a>
     <a href="https://github.com/Pedro-Nex">GitHub</a>
@@ -116,6 +116,20 @@
       tags.appendChild(li);
     });
     item.appendChild(tags);
+
+    if (p.exemplo) {
+      var exemplo = document.createElement("div");
+      exemplo.className = "projeto-exemplo";
+      var tituloExemplo = document.createElement("h4");
+      tituloExemplo.textContent = p.exemplo.titulo;
+      exemplo.appendChild(tituloExemplo);
+      var saida = document.createElement("pre");
+      var codigoSaida = document.createElement("code");
+      codigoSaida.textContent = p.exemplo.saida;
+      saida.appendChild(codigoSaida);
+      exemplo.appendChild(saida);
+      item.appendChild(exemplo);
+    }
 
     var links = document.createElement("p");
     links.className = "links";
