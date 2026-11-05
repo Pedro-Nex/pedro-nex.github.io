@@ -1,15 +1,18 @@
-// Para adicionar um projeto novo copie um bloco inteiro { ... } e cole depois da virgula
-// Troque os textos e salve o arquivo. O site monta o resto sozinho.
-// Campos: nome, descricao, tecnologias, status (opcional), links
-
 var projects = [
-  /** {
-    nome: "Bot de WhatsApp",
-    descricao: "Bot pessoal para WhatsApp feito com Java e Spring Boot. Nasceu como projeto de estudo para praticar back-end na prática.",
-    tecnologias: ["Java", "Spring Boot"],
-    status: "Projeto de aprendizado",
+  {
+    nome: "Controle de Gastos",
+    descricao: "Aplicação backend para gestão e categorização de finanças pessoais, desenvolvida para praticar arquitetura em camadas, persistência de dados e rotas REST na prática.",
+    tecnologias: ["Java", "Spring Boot", "Spring Data JPA", "PostgreSQL", "Git"],
+    status: "Em desenvolvimento",
+    links: [{ texto: "Ver código", url: "https://github.com/Pedro-Nex/controle-gastos" }]
+  },
+  {
+    nome: "TabelaFipe",
+    descricao: "Aplicação backend voltada para consulta, processamento e integração com os dados da API oficial da Tabela FIPE, desenvolvida para praticar consumo de serviços externos e tratamento de dados em Java.",
+    tecnologias: ["Java", "Spring Boot", "API REST", "Consumo de API", "Git"],
+    status: "Em desenvolvimento",
     links: [
-      { texto: "Ver código", url: "https://github.com/Pedro-Nex" }
+      { texto: "Ver código", url: "https://github.com/Pedro-Nex/TabelaFipe" }
     ]
-  } */
+  }
 ];
