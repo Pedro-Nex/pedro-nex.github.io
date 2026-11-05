@@ -8,8 +8,8 @@ var projects = [
   },
   {
     nome: "TabelaFipe",
-    descricao: "Aplicação backend voltada para consulta, processamento e integração com os dados da API oficial da Tabela FIPE, desenvolvida para praticar consumo de serviços externos e tratamento de dados em Java.",
-    tecnologias: ["Java", "Spring Boot", "API REST", "Consumo de API", "Git"],
+    descricao: "Aplicação de console em Java 21 e Spring Boot que consulta os valores da Tabela FIPE por meio da API pública de terceiros mantida por Deivid Fortuna. Permite buscar carros, motos e caminhões por marca e modelo e consultar os anos e valores disponíveis.",
+    tecnologias: ["Java 21", "Spring Boot", "Maven", "Consumo de API HTTP", "Git"],
     status: "Em desenvolvimento",
     links: [
       { texto: "Ver código", url: "https://github.com/Pedro-Nex/TabelaFipe" }
